@@ -10,6 +10,9 @@
     "Programming Languages"
   ],
   "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:tcl"
+  ],
   "contributes": {
     "languages": [{
       "id": "tcl",
