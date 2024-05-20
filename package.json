@@ -1,0 +1,63 @@
+{
+  "name": "tcl-language-support",
+  "displayName": "Tcl Language Support",
+  "description": "Tcl Language Support for VSCode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [{
+      "id": "tcl",
+      "aliases": ["tcl", "tcl"],
+      "extensions": [".tcl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "tcl",
+      "scopeName": "source.tcl",
+      "path": "./syntaxes/tcl.tmLanguage.json"
+    }],
+    "configuration": {
+      "type": "object",
+      "title": "Tcl Configuration",
+      "properties": {
+          "tcl.interpreterPath": {
+              "type": "string",
+              "default": "",
+              "description": "Path to the Tcl interpreter"
+          }
+      }
+    },
+    "commands": [
+        {
+            "command": "extension.selectTclInterpreter",
+            "title": "Select Tcl Interpreter"
+        },
+        {
+            "command": "extension.runTclFile",
+            "title": "Run Tcl File"
+        }
+    ],
+    "menus": {
+        "editor/title": [
+            {
+                "when": "resourceLangId == tcl",
+                "command": "extension.runTclFile",
+                "group": "navigation"
+            }
+        ],
+        "editor/context": [
+            {
+                "when": "resourceLangId == tcl",
+                "command": "extension.runTclFile",
+                "group": "navigation"
+            }
+        ]
+    }
+  }
+}
