@@ -3,6 +3,9 @@
   "displayName": "Tcl Language Support",
   "description": "Tcl Language Support for VSCode",
   "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/Kendr1ckFu/tcl-language-support.git"
+  },
   "engines": {
     "vscode": "^1.89.0"
   },

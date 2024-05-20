@@ -1,52 +1,43 @@
-# tcl-language-support README
+# Tcl Language Support for VSCode
 
-This is the README for your extension "tcl-language-support". After writing up a brief description, we recommend including the following sections.
+This extension provides comprehensive Tcl language support in Visual Studio Code. It includes features such as syntax highlighting, interpreter configuration, and the ability to run Tcl scripts directly from the editor.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Syntax Highlighting**: Enhances Tcl script readability with color-coded syntax.
+- **Interpreter Configuration**: Allows users to specify the path to their Tcl interpreter.
+- **Run Tcl Scripts**: Execute Tcl scripts directly from VSCode with a configured interpreter.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Open Visual Studio Code.
+2. Go to the Extensions view by clicking on the square icon on the sidebar or pressing `Ctrl+Shift+X`.
+3. Search for "Tcl Language Support".
+4. Click on the install button.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
+
+### Configuring Tcl Interpreter
+
+1. Open the Command Palette (`Ctrl+Shift+P`).
+2. Type and select `Select Tcl Interpreter`.
+3. Navigate to the executable Tcl interpreter file and select it.
+4. The path will be saved and displayed in the status bar.
+
+### Running a Tcl Script
+
+1. Open a `.tcl` file in VSCode.
+2. Right-click in the editor window and select `Run Tcl File` from the context menu, or use the command in the editor title navigation.
+3. The script will execute in a new terminal pane.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Visual Studio Code version 1.89.0 or higher.
 
-## Extension Settings
+## Contributing
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Contributions to the Tcl Language Support extension are welcome. Please feel free to fork the repository, make changes, and submit pull requests.
 
-For example:
+## License
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-**Enjoy!**
+This project is licensed under the MIT License - see the LICENSE file for details.
