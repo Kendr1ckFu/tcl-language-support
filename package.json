@@ -2,7 +2,7 @@
   "name": "tcl-language-support-for-vscode",
   "displayName": "Tcl Language Support for VSCode",
   "description": "Tcl Language Support for VSCode",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "K3ndr1ckFu",
   "icon": "images/logo.png",
   "repository": {
@@ -48,7 +48,7 @@
         },
         {
             "command": "extension.runTclFile",
-            "title": "Run Tcl File"
+            "title": "Run"
         }
     ],
     "menus": {
