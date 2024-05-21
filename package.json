@@ -1,8 +1,10 @@
 {
-  "name": "tcl-language-support",
-  "displayName": "Tcl Language Support",
+  "name": "tcl-language-support-for-vscode",
+  "displayName": "Tcl Language Support for VSCode",
   "description": "Tcl Language Support for VSCode",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "publisher": "K3ndr1ckFu",
+  "icon": "images/logo.png",
   "repository": {
     "url": "https://github.com/Kendr1ckFu/tcl-language-support.git"
   },
