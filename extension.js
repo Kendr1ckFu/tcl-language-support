@@ -12,7 +12,8 @@ function activate(context) {
             canSelectMany: false,
             openLabel: 'Select Tcl Interpreter',
             filters: {
-                'Executable Files': ['exe', '']
+                'Executable Files': ['exe', ''],
+                'All Files': ['*'],
             }
         });
 
